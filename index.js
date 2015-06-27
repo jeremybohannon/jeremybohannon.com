@@ -6,6 +6,10 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/index.html', function (req, res) {
+  res.sendFile(__dirname + '/index.html');
+});
+
 app.use(function(req, res, next) {
   res.status(404).send('Error: 404');
 });

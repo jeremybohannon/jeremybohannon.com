@@ -29,8 +29,28 @@
   background-color: #eaeaea;
 }
 
+.title{
+  margin-left: 20px;
+}
+
 
 a:hover, a:active{
   color: #33363B;
   background-color: #eaeaea;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #33363B;
+  font-family: "Exo-otf", "Exo-eot", Arial;
+  font-size: 22px;
+  padding: 1vw 0;
+}
+
+.footerMessage{
+  color: #eaeaea;
+  text-align: center;
+  font-size: 11px;
 }

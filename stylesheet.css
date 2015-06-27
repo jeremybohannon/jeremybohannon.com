@@ -1,0 +1,36 @@
+*{
+  margin: 0px;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  background-color: #33363B;
+  font-family: "Exo-otf", "Exo-eot", Arial;
+  font-size: 22px;
+  padding: 1vw 0;
+}
+
+.button {
+  color:#eaeaea;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.content{
+  min-width: 300px;
+  margin:auto;
+  top: 53px;
+  position: relative;
+  background-color: #eaeaea;
+}
+
+
+a:hover, a:active{
+  color: #33363B;
+  background-color: #eaeaea;
+}

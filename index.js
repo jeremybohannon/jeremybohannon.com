@@ -6,12 +6,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.get('/contact.html', function (req, res) {
+app.get('/contact/', function (req, res) {
   res.sendFile(path.join(__dirname + '/contact.html'));
 });
 
 app.get('/stylesheet.css', function(req, res) {
   res.sendFile(__dirname + '/stylesheet.css');
+});
+
+app.get('/contactForm.css', function(req, res) {
+  res.sendFile(__dirname + '/contactForm.css');
 });
 
 app.use(function(req, res, next) {

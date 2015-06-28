@@ -1,13 +1,17 @@
 var express = require('express');
-var app = express();
-
+var app     = express();
+var path    = require("path");
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.get('/index.html', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+app.get('/contact.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/contact.html'));
+});
+
+app.get('/stylesheet.css', function(req, res) {
+  res.sendFile(__dirname + '/stylesheet.css');
 });
 
 app.use(function(req, res, next) {

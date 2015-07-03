@@ -28,28 +28,28 @@ margin:0;
   margin-top: 5px;
 }
 
+a:hover, a:active{
+  color: #33363B;
+  background-color: #eaeaea;
+}
+
 .content{
   min-width: 100%;
   min-height: 100%;
   top: 3em;
   padding: 1vw 0;
   position: fixed;
-  background-color: #eaeaea;
+  background-color: #4D7B86;
 }
 
-.title{
-  margin-left: 20px;
-  margin-top: 10px;
-  font-family: Arial;
+.underCon {
+  position: relative;
+  margin-top: 25%;
+  transform: translateY(-50%);
   text-align: center;
   color: #33363B;
 }
 
-
-a:hover, a:active{
-  color: #33363B;
-  background-color: #eaeaea;
-}
 
 .footer{
   position: fixed;

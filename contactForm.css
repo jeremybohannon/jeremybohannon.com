@@ -1,5 +1,11 @@
+.contact-container{
+	position: relative;
+	padding-left: 25%;
+	top: 50px;
+}
 
-/*** TEST ***/
+
+
 input, textarea {
 	padding: 10px;
 	border: 1px solid #E5E5E5;
@@ -30,9 +36,6 @@ input:focus, textarea:focus {
 	color: #999999;
 }
 
-/* ===========================
-   ====== Submit Button ======
-   =========================== */
 
 .submit input {
 	width: 100px;

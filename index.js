@@ -18,6 +18,10 @@ app.get('/contactForm.css', function(req, res) {
   res.sendFile(__dirname + '/contactForm.css');
 });
 
+app.get('/images/tempIcon.ico', function(req, res) {
+  res.sendFile(__dirname + '/images/tempIcon.ico');
+});
+
 app.use(function(req, res, next) {
   res.status(404).send('Error: 404');
 });

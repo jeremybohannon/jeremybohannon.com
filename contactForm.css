@@ -1,4 +1,10 @@
 
+
+
+.bar{
+	max-height: 20px;
+}
+
 .inner-content{
 	background-color: #fff;
 	max-width: 90%;
@@ -10,11 +16,7 @@
 	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	border-radius: 3px;
-	margin-top: 50px;
-}
-
-.bar{
-	max-height: 20px;
+	margin-top: 17px;
 }
 
 .title {

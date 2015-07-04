@@ -18,8 +18,8 @@ app.get('/contactForm.css', function(req, res) {
   res.sendFile(__dirname + '/contactForm.css');
 });
 
-app.get('/Images/tempIcon.ico', function(req, res) {
-  res.sendFile(__dirname + '/Images/tempIcon.ico');
+app.get('/images/tempIcon.ico', function(req, res) {
+  res.sendFile(__dirname + '/images/tempIcon.ico');
 });
 
 app.use(function(req, res, next) {

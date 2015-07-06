@@ -11,11 +11,11 @@ app.get('/contact/', function (req, res) {
 });
 
 app.get('/styles/stylesheet.css', function(req, res) {
-  res.sendFile(__dirname + 'styles/stylesheet.css');
+  res.sendFile(__dirname + '/styles/stylesheet.css');
 });
 
 app.get('/styles/contactForm.css', function(req, res) {
-  res.sendFile(__dirname + 'styles/contactForm.css');
+  res.sendFile(__dirname + '/styles/contactForm.css');
 });
 
 app.get('/favicon/tempIcon.ico', function(req, res) {

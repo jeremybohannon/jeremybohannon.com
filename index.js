@@ -10,16 +10,16 @@ app.get('/contact/', function (req, res) {
   res.sendFile(path.join(__dirname + '/contact.html'));
 });
 
-app.get('/styles/stylesheet.css', function(req, res) {
-  res.sendFile(__dirname + '/styles/stylesheet.css');
+app.get('/stylesheet.css', function(req, res) {
+  res.sendFile(__dirname + '/stylesheet.css');
 });
 
-app.get('/styles/contactForm.css', function(req, res) {
-  res.sendFile(__dirname + '/styles/contactForm.css');
+app.get('/contactForm.css', function(req, res) {
+  res.sendFile(__dirname + '/contactForm.css');
 });
 
-app.get('/favicon/tempIcon.ico', function(req, res) {
-  res.sendFile(__dirname + '/favicon/tempIcon.ico');
+app.get('/tempIcon.ico', function(req, res) {
+  res.sendFile(__dirname + '/tempIcon.ico');
 });
 
 app.use(function(req, res, next) {

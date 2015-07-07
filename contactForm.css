@@ -29,8 +29,8 @@
 	margin-top: 285px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 600px;
-	min-width: 600px;
+	max-width: 800px;
+	min-width: 500px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
@@ -63,7 +63,7 @@ p.submit {
 input, textarea {
 	padding: 10px;
 	border: 1px solid #E5E5E5;
-	width: 250px;
+	width: 90%;
 	color: #999999;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
@@ -71,7 +71,7 @@ input, textarea {
 }
 
 textarea {
-	width: 540px;
+	width: 95%;
 	height: 150px;
 	max-width: 100%;
 	line-height: 18px;

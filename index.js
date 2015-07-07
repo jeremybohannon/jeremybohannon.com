@@ -10,16 +10,16 @@ app.get('/contact/', function (req, res) {
   res.sendFile(path.join(__dirname + '/contact.html'));
 });
 
-app.get('/stylesheet.css', function(req, res) {
-  res.sendFile(__dirname + '/stylesheet.css');
+app.get('/CSS/stylesheet.css', function(req, res) {
+  res.sendFile(__dirname + '/CSS/stylesheet.css');
 });
 
-app.get('/contactForm.css', function(req, res) {
-  res.sendFile(__dirname + '/contactForm.css');
+app.get('/CSS/contactForm.css', function(req, res) {
+  res.sendFile(__dirname + '/CSS/contactForm.css');
 });
 
-app.get('/tempIcon.ico', function(req, res) {
-  res.sendFile(__dirname + '/tempIcon.ico');
+app.get('/favicon/tempIcon.ico', function(req, res) {
+  res.sendFile(__dirname + '/favicon/tempIcon.ico');
 });
 
 app.get('/resumeJuly.pdf', function(req, res) {

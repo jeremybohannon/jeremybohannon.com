@@ -3,7 +3,7 @@
 	text-align: center;
 }
 
-.placesToContact a:hover, a:active {
+.placesToContact a:hover, .placesToContact a:active {
 	color: #4BA7C2 !important;
   background-color: #fff !important;
 }

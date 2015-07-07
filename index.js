@@ -22,6 +22,10 @@ app.get('/tempIcon.ico', function(req, res) {
   res.sendFile(__dirname + '/tempIcon.ico');
 });
 
+app.get('/resumeJuly.pdf', function(req, res) {
+  res.sendFile(__dirname + '/resumeJuly.pdf');
+});
+
 app.use(function(req, res, next) {
   res.status(404).send('Error: 404');
 });

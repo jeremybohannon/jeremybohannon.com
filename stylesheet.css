@@ -27,6 +27,17 @@
   background-color: #eaeaea;
 }
 
+a.resume {
+  color: #4D7B86;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: Arial;
+}
+
+a.resume:hover, a.resume:active{
+  color: #4BA7C2 !important;
+  background-color: #fff !important;
+}
 
 .content{
   min-width: 100%;

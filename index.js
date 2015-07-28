@@ -1,40 +1,44 @@
 var express = require('express');
-var app     = express();
-var path    = require("path");
+var app = express();
+var path = require("path");
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.get('/contact/', function (req, res) {
-  res.sendFile(path.join(__dirname + '/contact.html'));
+    res.sendFile(path.join(__dirname + '/contact.html'));
 });
 
-app.get('/CSS/stylesheet.css', function(req, res) {
-  res.sendFile(__dirname + '/CSS/stylesheet.css');
+app.get('/CSS/stylesheet.css', function (req, res) {
+    res.sendFile(__dirname + '/CSS/stylesheet.css');
 });
 
-app.get('/CSS/contactForm.css', function(req, res) {
-  res.sendFile(__dirname + '/CSS/contactForm.css');
+app.get('/CSS/homecontent.css', function (req, res) {
+    res.sendFile(__dirname + '/CSS/homecontent.css');
 });
 
-app.get('/favicon/tempIcon.ico', function(req, res) {
-  res.sendFile(__dirname + '/favicon/tempIcon.ico');
+app.get('/CSS/contactForm.css', function (req, res) {
+    res.sendFile(__dirname + '/CSS/contactForm.css');
 });
 
-app.get('/resumeJuly.pdf', function(req, res) {
-  res.sendFile(__dirname + '/resumeJuly.pdf');
+app.get('/favicon/tempIcon.ico', function (req, res) {
+    res.sendFile(__dirname + '/favicon/tempIcon.ico');
 });
 
-app.use(function(req, res, next) {
-  res.status(404).send('Error: 404');
+app.get('/resumeJuly.pdf', function (req, res) {
+    res.sendFile(__dirname + '/resumeJuly.pdf');
+});
+
+app.use(function (req, res, next) {
+    res.status(404).send('Error: 404');
 });
 
 var server = app.listen(80, function () {
 
-  var host = server.address().address;
-  var port = server.address().port;
+    var host = server.address().address;
+    var port = server.address().port;
 
-  console.log('My site is listening at http://%s:%s', host, port);
+    console.log('My site is listening at http://%s:%s', host, port);
 
 });

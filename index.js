@@ -26,8 +26,8 @@ app.get('/favicon/tempIcon.ico', function (req, res) {
     res.sendFile(__dirname + '/favicon/tempIcon.ico');
 });
 
-app.get('/resumeJuly.pdf', function (req, res) {
-    res.sendFile(__dirname + '/resumeJuly.pdf');
+app.get('/resume.pdf', function (req, res) {
+    res.sendFile(__dirname + '/resume.pdf');
 });
 
 app.use(function (req, res, next) {

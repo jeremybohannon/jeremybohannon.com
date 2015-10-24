@@ -4,12 +4,12 @@
 }
 
 .placesToContact a:hover, .placesToContact a:active {
-	color: #4BA7C2 !important;
+	color: #A2A2A2 !important;
   background-color: #fff !important;
 }
 
 #third-party {
-	color: #4D7B86;
+	color: #666;
 	text-decoration: none;
 	font-size: 28px;
 	font-family: Arial;
@@ -20,17 +20,13 @@
 	font-size: 20px;
 }
 
-.github {
-}
-
 .contact-container{
 	position: relative;
 	background-color: #eaeaea;
-	margin-top: 285px;
+	margin-top: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 800px;
-	min-width: 500px;
+	max-width: 85%;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
@@ -40,7 +36,7 @@
 
 p.name {
 	padding-top: 25px;
-	padding-left: 20px;
+	padding-left: 5%;
 	width: 48%;
 	float: left;
 }
@@ -49,6 +45,16 @@ p.email {
 	padding-top: 25px;
 	width: 48%;
 	float: right;
+}
+
+@media(max-width: 600px){
+	p.name,
+	p.email{
+		padding-left: 20px;
+		display: block;
+		width: 100%;
+		float: left;
+	}
 }
 
 p.textBox {
@@ -71,7 +77,6 @@ input, textarea {
 }
 
 textarea {
-	width: 95%;
 	height: 150px;
 	max-width: 100%;
 	line-height: 18px;

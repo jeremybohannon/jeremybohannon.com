@@ -3,11 +3,11 @@ var app = express();
 var path = require("path");
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/Views/index.html'));
 });
 
 app.get('/contact/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/contact.html'));
+    res.sendFile(path.join(__dirname + '/Views/contact.html'));
 });
 
 app.get('/CSS/stylesheet.css', function (req, res) {

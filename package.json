@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jeremybohannon/jeremybohannon.com/issues"
   },
-  "homepage": "https://github.com/jeremybohannon/jeremybohannon.com"
+  "homepage": "https://github.com/jeremybohannon/jeremybohannon.com",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }

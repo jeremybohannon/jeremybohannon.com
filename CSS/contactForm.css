@@ -27,6 +27,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 85%;
+	min-height: 25%;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
@@ -36,7 +37,7 @@
 
 p.name {
 	padding-top: 25px;
-	padding-left: 5%;
+	padding-left: 3%;
 	width: 48%;
 	float: left;
 }
@@ -79,6 +80,7 @@ input, textarea {
 textarea {
 	height: 150px;
 	max-width: 100%;
+	min-width: 95%;
 	line-height: 18px;
 }
 

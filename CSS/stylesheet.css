@@ -12,6 +12,9 @@
   font-family: Arial;
   font-size: 22px;
   z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
 
 .button {
@@ -43,7 +46,7 @@
   margin-right: auto;
   max-width: 960px;
   width: 80%;
-  height: 93%;
+  height: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;

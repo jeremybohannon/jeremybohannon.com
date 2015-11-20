@@ -1,6 +1,6 @@
 {
   "name": "jeremybohannon.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/jeremybohannon/jeremybohannon.com/issues"
   },
-  "homepage": "https://github.com/jeremybohannon/jeremybohannon.com#readme"
+  "homepage": "https://github.com/jeremybohannon/jeremybohannon.com#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "path": "^0.12.7"
+  }
 }

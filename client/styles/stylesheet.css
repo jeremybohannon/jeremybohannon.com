@@ -3,3 +3,35 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+body{
+  background-color: #eaeaea;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+  display: block;
+}
+
+#header{
+  background: #33363b;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.container-inner-top{
+  margin-left: 25%;
+}
+
+.site-title a{
+  display: block;
+  color: #fff;
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  outline: 0;
+}
+
+

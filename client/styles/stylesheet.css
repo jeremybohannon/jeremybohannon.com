@@ -12,21 +12,34 @@ body{
 div{
   display: block;
 }
+#wrapper {
+  min-width: 300px;
+}
 
 #header{
   background: #33363b;
   position: relative;
   padding-bottom: 60px;
+  
 }
 
-.container-inner-top{
-  margin-left: 25%;
+#container-top{
+  margin: auto;
+  width: 60%;
+  max-width: 800px;
+  padding-top: 40px;
 }
 
 .site-title a{
   display: block;
   color: #fff;
   max-width: 100%;
+}
+
+@media (max-width: 500px){
+  .site-title a{
+    font-size: 15px;
+  }
 }
 
 a{

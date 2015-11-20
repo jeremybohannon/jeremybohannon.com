@@ -7,11 +7,15 @@ var http = require('http');
 
 
 app.get('/', function(req, res){
-	res.sendFile(path.join(__dirname + '../../client/build/index.html'))
+	res.sendFile(path.join(__dirname + '../../client/build/index.html'));
+});
+
+app.get('/client/styles/stylesheet.css', function(req, res){
+	res.sendFile(path.join(__dirname + '../../client/styles/stylesheet.css'));
 });
 
 app.get('/kristinhorton', function(req, res){
-	res.sendFile(path.join(__dirname + '../../kristinhorton.com/index.html'))
+	res.sendFile(path.join(__dirname + '../../kristinhorton.com/index.html'));
 });
 
 app.use(function (req, res, next) {

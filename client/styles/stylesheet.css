@@ -41,11 +41,39 @@ div{
 .site-description{
   font-size: 16px;
   font-style: italic;
-  color: rgb(97, 95, 95);
+  color: rgb(148, 148, 148);
   float: left;
   margin-left: 20px;
   line-height: 55px;
 }
+
+#page{
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFF;
+  width: 80%;
+  height: 100%;
+  min-height: 90%;
+  
+}
+
+#footer-bottom{
+  background: #33363b;
+  height: 80px;
+}
+.container-inner-footer{
+  margin: auto;
+  width: 90%;
+  max-width: 1600px;
+  padding-top: 30px;
+}
+
+.footer-message{
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(148, 148, 148);
+}
+
 
 @media (max-width: 500px){
   #header{
@@ -60,6 +88,10 @@ div{
     font-size: 30px;
     text-align: center;
   }
+  
+  #page{
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px){
@@ -68,9 +100,14 @@ div{
   }
 }
 
+
+
+
 a{
   text-decoration: none;
   outline: 0;
 }
+
+
 
 

@@ -25,8 +25,8 @@ div{
 
 #container-top{
   margin: auto;
-  width: 90%;
-  max-width: 1600px;
+  width: 95%;
+  max-width: 1685px;
   padding-top: 60px;
 }
 
@@ -117,7 +117,7 @@ a{
   }
   
   #container-top{
-    width: 70%;
+    width: 61%;
     padding-top: 40px;
   }
   .site-title a{

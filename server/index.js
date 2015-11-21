@@ -22,6 +22,10 @@ app.get('/resume.pdf', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/resources/resume.pdf'));
 });
 
+app.get('/flowers.jpg', function(req, res){
+	res.sendFile(path.join(__dirname + '../../client/resources/image_01.jpg'));
+});
+
 app.use(function (req, res, next) {
 	res.status(404).send('Error: 404');
 });

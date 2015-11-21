@@ -19,26 +19,52 @@ div{
 #header{
   background: #33363b;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 140px;
   
 }
 
 #container-top{
   margin: auto;
-  width: 60%;
-  max-width: 800px;
-  padding-top: 40px;
+  width: 90%;
+  max-width: 1600px;
+  padding-top: 60px;
 }
 
 .site-title a{
   display: block;
   color: #fff;
   max-width: 100%;
+  font-size: 42px;
+  float: left;
+}
+
+.site-description{
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(97, 95, 95);
+  float: left;
+  margin-left: 20px;
+  line-height: 55px;
 }
 
 @media (max-width: 500px){
+  #header{
+    padding-bottom: 70px;
+  }
+  
+  #container-top{
+    width: 70%;
+    padding-top: 40px;
+  }
   .site-title a{
-    font-size: 15px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px){
+  .site-description{
+    display: none;
   }
 }
 

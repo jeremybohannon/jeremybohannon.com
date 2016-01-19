@@ -19,14 +19,18 @@
 				<div class="container-inner">
 					<div class="content">
 						<div class="pad group">
-
 							<div class ="featured">
               	<img src="/flowers.jpg" id="Flower">
                 <script type="text/javascript">
-                var flower = document.getElementById('Flower');
-                flower.onmouseover = function(){
-                  flower.style.visibility = 'hidden';
-                }
+                var featured = document.getElementsByClassName("featured");
+								var flower = document.getElementById("Flower");
+
+								featured[0].onmouseenter = function(){
+										flower.style.visibility = 'hidden';
+								}
+								featured[0].onmouseleave = function(){
+									flower.style.visibility = 'visible';
+								}
 
                 </script>
 							</div>

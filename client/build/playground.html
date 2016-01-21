@@ -12,7 +12,7 @@
 						<h1 class="site-title">
 							<a href="jeremybohannon.com/">Jeremy Bohannon</a>
 						</h1>
-							<p class="site-description">Software Engineer Extraordinaire</p>
+							<p class="site-description", id="site-description">Software Engineer Extraordinaire</p>
 				</div>
 			</div>
 			<div class="container" id="page">
@@ -21,18 +21,6 @@
 						<div class="pad group">
 							<div class ="featured">
               	<img src="/flowers.jpg" id="Flower">
-                <script type="text/javascript">
-                var featured = document.getElementsByClassName("featured");
-								var flower = document.getElementById("Flower");
-
-								featured[0].onmouseenter = function(){
-										flower.style.visibility = 'hidden';
-								}
-								featured[0].onmouseleave = function(){
-									flower.style.visibility = 'visible';
-								}
-
-                </script>
 							</div>
 							<p> Website is currently under construction </p>
 							<a href="/resume.pdf" id="resume"> Please review my resume in the mean time!</a>
@@ -51,4 +39,35 @@
 			</div>
 		</div>
 	</body>
+	<script>
+			var elementIsClicked = false;
+			var descrip;
+			var site_description = document.getElementById('site-description');
+
+			site_description.addEventListener('click',function (){
+				descrip	= prompt("What am I?");
+
+				if(descrip){
+					site_description.innerHTML = descrip;
+					console.log(descrip);
+
+				} else if(descrip == null) {
+					var current = site_description.innerHTML;
+					site_description.innerHTML = current;
+				}else {
+					site_description.innerHTML = "Software Engineer Extroidinair";
+				}
+			});
+		</script>
+
+		<!-- <script type="text/javascript">
+	// 	var featured = document.getElementsByClassName("featured");
+	// 	var flower = document.getElementById("Flower");
+	// 	featured[0].onmouseenter = function(){
+	// 		flower.style.visibility = 'hidden';
+	// 	}
+	// 	featured[0].onmouseleave = function(){
+	// 		flower.style.visibility = 'visible';
+	// 	}
+	// </script> -->
 </html>

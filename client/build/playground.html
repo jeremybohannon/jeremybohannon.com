@@ -4,13 +4,14 @@
 		<title> Jeremy Bohannon </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="/client/styles/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="/client/styles/playground.css" />
 	</head>
 	<body>
 		<div id="wrapper">
 			<div id="header">
 				<div id="container-top">
 						<h1 class="site-title">
-							<a href="jeremybohannon.com/">Jeremy Bohannon</a>
+							<a href="jeremybohannon.com/", id="name">Jeremy Bohannon</a>
 						</h1>
 							<p class="site-description", id="site-description">Software Engineer Extraordinaire</p>
 				</div>
@@ -58,6 +59,37 @@
 					site_description.innerHTML = "Software Engineer Extroidinair";
 				}
 			});
+		</script>
+		<!-- Site Title Color Change -->
+		<script>
+		var title = document.getElementsByClassName('site-title');
+		var thisName = document.getElementById('name');
+		var colorArr = ["red", "blue", "green", "yellow"];
+		var myInterval;
+		title[0].onmouseenter = function(){
+			 function repeat(){
+				 	var x, y, z;
+					x = Math.floor(Math.random() * 256)
+					y = Math.floor(Math.random() * 256)
+				 	z = Math.floor(Math.random() * 256)
+				 thisName.style.color = "rgb("
+			 														+ x + ","
+			 													  + y + ","
+																	+ z + ")";
+				 console.log("X: " + x + "\tY: " + y + "\tZ: " + z);
+				 if(x == 148 && y == 148 && z == 148){
+					 alert("Bingo! If you see this screen you win $10");
+				 } else if (x == y && x == z)
+				 {
+					 alert("Bingo! If you see this screen you win $5");
+				 }
+				}
+				myInterval = setInterval(repeat, 100);
+		}
+		title[0].onmouseleave = function(){
+			clearInterval(myInterval);
+			thisName.style.color = "white";
+		}
 		</script>
 
 		<!-- <script type="text/javascript">

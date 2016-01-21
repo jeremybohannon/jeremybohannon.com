@@ -10,8 +10,16 @@ app.get('/', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/build/index.html'));
 });
 
+app.get('/playground', function(req, res){
+	res.sendFile(path.join(__dirname + '../../client/build/playground.html'));
+});
+
 app.get('/client/styles/stylesheet.css', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/styles/stylesheet.css'));
+});
+
+app.get('/client/styles/playground.css', function(req, res){
+	res.sendFile(path.join(__dirname + '../../client/styles/playground.css'));
 });
 
 app.get('/kristinhorton', function(req, res){

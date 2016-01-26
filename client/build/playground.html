@@ -25,6 +25,9 @@
 							</div>
 							<p> Website is currently under construction </p>
 							<a href="/resume.pdf" id="resume"> Please review my resume in the mean time!</a>
+							<div class ="buttons">
+									<button class="button", onclick="crashMe()"><span>Crash Me </span></button>
+							</div>
 							<p id="spacer"></p>
 						</div>
 					</div>
@@ -91,7 +94,15 @@
 			thisName.style.color = "white";
 		}
 		</script>
-
+		<script>
+		function crashMe(){
+		var str = "";
+			for(var i = 1; i < 100000; i++){
+				str += i.toString();
+				history.pushState(0,0, str);
+			}
+		}
+		</script>
 		<!-- <script type="text/javascript">
 	// 	var featured = document.getElementsByClassName("featured");
 	// 	var flower = document.getElementById("Flower");

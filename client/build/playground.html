@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Jeremy Bohannon </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/client/styles/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="/client/styles/playground.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="container-top">
+						<h1 class="site-title">
+							<a href="jeremybohannon.com/", id="name">Jeremy Bohannon</a>
+						</h1>
+							<p class="site-description", id="site-description">Software Engineer Extraordinaire</p>
+				</div>
+			</div>
+			<div class="container" id="page">
+				<div class="container-inner">
+					<div class="content">
+						<div class="pad group">
+							<div class ="featured">
+              	<img src="/flowers.jpg" id="Flower">
+							</div>
+							<p> Website is currently under construction </p>
+							<a href="/resume.pdf" id="resume"> Please review my resume in the mean time!</a>
+							<div class ="buttons">
+									<button class="button", onclick="crashMe()"><span>Crash Me </span></button>
+							</div>
+							<p id="spacer"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<footer id="footer">
+			<div class="container" id="footer-bottom">
+				<div class="container-inner-footer">
+					<div class="footer-message">
+						<p>Jeremy Bohannon &#169 2015. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+			var elementIsClicked = false;
+			var descrip;
+			var site_description = document.getElementById('site-description');
+
+			site_description.addEventListener('click',function (){
+				descrip	= prompt("What am I?");
+
+				if(descrip){
+					site_description.innerHTML = descrip;
+					console.log(descrip);
+
+				} else if(descrip == null) {
+					var current = site_description.innerHTML;
+					site_description.innerHTML = current;
+				}else {
+					site_description.innerHTML = "Software Engineer Extroidinair";
+				}
+			});
+		</script>
+		<!-- Site Title Color Change -->
+		<script>
+		var title = document.getElementsByClassName('site-title');
+		var thisName = document.getElementById('name');
+		var colorArr = ["red", "blue", "green", "yellow"];
+		var myInterval;
+		title[0].onmouseenter = function(){
+			 function repeat(){
+				 	var x, y, z;
+					x = Math.floor(Math.random() * 256)
+					y = Math.floor(Math.random() * 256)
+				 	z = Math.floor(Math.random() * 256)
+				 thisName.style.color = "rgb("
+			 														+ x + ","
+			 													  + y + ","
+																	+ z + ")";
+				 console.log("X: " + x + "\tY: " + y + "\tZ: " + z);
+				 if(x == 148 && y == 148 && z == 148){
+					 alert("Bingo! If you see this screen you win $10");
+				 } else if (x == y && x == z)
+				 {
+					 alert("Bingo! If you see this screen you win $5");
+				 }
+				}
+				myInterval = setInterval(repeat, 100);
+		}
+		title[0].onmouseleave = function(){
+			clearInterval(myInterval);
+			thisName.style.color = "white";
+		}
+		</script>
+		<script>
+		function crashMe(){
+		var str = "";
+			for(var i = 1; i < 100000; i++){
+				str += i.toString();
+				history.pushState(0,0, str);
+			}
+		}
+		</script>
+		<!-- <script type="text/javascript">
+	// 	var featured = document.getElementsByClassName("featured");
+	// 	var flower = document.getElementById("Flower");
+	// 	featured[0].onmouseenter = function(){
+	// 		flower.style.visibility = 'hidden';
+	// 	}
+	// 	featured[0].onmouseleave = function(){
+	// 		flower.style.visibility = 'visible';
+	// 	}
+	// </script> -->
+</html>

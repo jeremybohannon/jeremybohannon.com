@@ -22,6 +22,12 @@ app.get('/resume.pdf', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/resources/resume.pdf'));
 });
 
+app.get('/kristinhorton/resume.pdf', function(req, res){
+	res.sendFile(path.join(__dirname + '../../kristinhorton.com/resume.pdf'));
+});
+
+
+
 app.get('/flowers.jpg', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/resources/image_01.jpg'));
 });

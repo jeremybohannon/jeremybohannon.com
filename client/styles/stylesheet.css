@@ -105,8 +105,12 @@ img{
   color: #D0CFCF;
 }
 
+#about-me{
+    visibility: hidden;
+}
+
 #spacer{
-  padding-bottom: 500px;
+  padding-bottom: 400px;
 }
 
 a{

@@ -26,7 +26,9 @@ app.get('/kristinhorton/resume.pdf', function(req, res){
 	res.sendFile(path.join(__dirname + '../../kristinhorton.com/resume.pdf'));
 });
 
-
+app.get('/kristinhorton/style.css', function(req, res){
+	res.sendFile(path.join(__dirname + '../../kristinhorton.com/style.css'));
+});
 
 app.get('/flowers.jpg', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/resources/image_01.jpg'));

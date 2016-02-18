@@ -1,0 +1,79 @@
+
+body{
+  background-color: #788683;
+}
+
+h1{
+  letter-spacing: 5px;
+  font-size: 22px;
+  color: #2D2B21;
+}
+
+#player{
+  width: 100%;
+}
+
+.row{
+  margin:  0 auto;
+  height: auto;
+  width: 650px;
+  position: relative;
+}
+
+#first .button{
+  background-color: #96907A;
+  border: 2px solid #504D3E;
+  color: #504D3E;
+}
+
+#second .button{
+  background-color: #504D3E;
+  border: 2px solid #949A94;
+  color: #96907A;
+}
+
+.button{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+
+  transition: 5s;
+}
+
+.active{
+  animation-duration: 5s;
+  transform:scale(.5);
+}
+.activeR1{
+  animation-name: activationR1;
+}
+
+@keyframes activationR1{
+    from {
+      background-color: #596907A;
+      color: #504D3E;
+    }
+    50% {
+      background-color: #504D3E;
+      color: #96907A;
+    }
+}
+
+.activeR2{
+  animation-name: activationR2;
+}
+
+@keyframes activationR2{
+    0% {
+      background-color: #504D3E;
+      color: #96907A;
+    }
+    50% {
+      background-color: #96907A;
+      color: #504D3E;
+    }
+}

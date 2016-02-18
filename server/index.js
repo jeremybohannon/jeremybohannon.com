@@ -18,6 +18,10 @@ app.get('/client/styles/stylesheet.css', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/styles/stylesheet.css'));
 });
 
+app.get('/client/styles/style.scss', function(req, res){
+	res.sendFile(path.join(__dirname + '../../client/styles/styles.scss'));
+});
+
 app.get('/client/styles/playground.css', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/styles/playground.css'));
 });
@@ -36,6 +40,16 @@ app.get('/flowers.jpg', function(req, res){
 
 app.get('/favicon.png', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/resources/spinner10.png'));
+});
+
+app.get('/sampulator', function(req, res){
+	res.sendFile(path.join(__dirname + '../../sampulator/index.html'));
+});
+app.get('/sampulator/style.css', function(req, res){
+	res.sendFile(path.join(__dirname + '../../sampulator/style.css'));
+});
+app.get('/sampulator/app.js', function(req, res){
+	res.sendFile(path.join(__dirname + '../../sampulator/app.js'));
 });
 
 app.use(function (req, res, next) {

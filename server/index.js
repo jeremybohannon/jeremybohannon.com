@@ -4,53 +4,29 @@ var app = express();
 var path = require("path");
 var http = require('http');
 
-
-
 app.get('/', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/build/index.html'));
-});
-
-app.get('/playground', function(req, res){
-	res.sendFile(path.join(__dirname + '../../client/build/playground.html'));
-});
-
-app.get('/client/styles/stylesheet.css', function(req, res){
-	res.sendFile(path.join(__dirname + '../../client/styles/stylesheet.css'));
-});
-
-app.get('/client/styles/style.scss', function(req, res){
-	res.sendFile(path.join(__dirname + '../../client/styles/styles.scss'));
-});
-
-app.get('/client/styles/playground.css', function(req, res){
-	res.sendFile(path.join(__dirname + '../../client/styles/playground.css'));
-});
-
-app.get('/kristinhorton', function(req, res){
-	res.sendFile(path.join(__dirname + '../../kristinhorton.com/index.html'));
 });
 
 app.get('/resume.pdf', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/resources/resume.pdf'));
 });
 
-app.get('/flowers.jpg', function(req, res){
-	res.sendFile(path.join(__dirname + '../../client/resources/image_01.jpg'));
+app.get('/playground', function(req, res){
+	res.sendFile(path.join(__dirname + '../../client/build/playground.html'));
 });
 
-app.get('/favicon.png', function(req, res){
-	res.sendFile(path.join(__dirname + '../../client/resources/spinner10.png'));
-});
+app.use('/client',        express.static(path.join(__dirname + '../../client')));
 
-app.get('/sampulator', function(req, res){
-	res.sendFile(path.join(__dirname + '../../sampulator/index.html'));
-});
-app.get('/sampulator/style.css', function(req, res){
-	res.sendFile(path.join(__dirname + '../../sampulator/style.css'));
-});
-app.get('/sampulator/app.js', function(req, res){
-	res.sendFile(path.join(__dirname + '../../sampulator/app.js'));
-});
+app.use('/build',         express.static(path.join(__dirname + '../../client/build')));
+
+app.use('/styles',        express.static(path.join(__dirname + '../../client/styles')));
+
+app.use('/resources',     express.static(path.join(__dirname + '../../client/resources')));
+
+app.use('/kristinhorton', express.static(path.join(__dirname + '../../kristinhorton.com')));
+
+app.use('/sampulator',    express.static(path.join(__dirname + '../../sampulator')));
 
 app.use(function (req, res, next) {
 	res.status(404).send('Error: 404');

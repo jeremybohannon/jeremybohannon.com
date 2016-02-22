@@ -18,6 +18,10 @@ app.get('/playground', function(req, res){
 	res.sendFile(path.join(__dirname + '../../client/build/playground.html'));
 });
 
+app.get('/photography', function(req, res){
+	res.sendFile(path.join(__dirname + '../../client/build/photography.html'));
+});
+
 app.use('/client',        express.static(client));
 
 app.use('/sampulator',    express.static(path.join(__dirname + '../../sampulator')));

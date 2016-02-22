@@ -19,10 +19,11 @@
   "bugs": {
     "url": "https://github.com/jeremybohannon/jeremybohannon.com/issues"
   },
-  "homepage": "https://github.com/jeremybohannon/jeremybohannon.com#readme",
+  "homepage": "https://github.com/jeremybohannon/jeremybohannon.com/",
   "dependencies": {
     "express": "^4.13.3",
     "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
     "http": "0.0.0",
     "node-sass": "^3.4.2",
     "path": "^0.12.7"

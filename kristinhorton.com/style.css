@@ -1,5 +1,8 @@
+
 body {
-  background: #ffffff; margin: 0; padding: 0;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -10,7 +13,8 @@ a {
   width: 900px; margin: 0; padding: 0; background: #dddddd;
 }
 #header {
-  width: 900px;
+  /*width: 900px;*/
+  width: 100vw;
   height: 50px;
   margin: 0;
   padding: 0;
@@ -18,15 +22,29 @@ a {
   background: #7b00ff;
   margin: 0 0 .5% 0;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #202020
+  box-shadow: 5px 5px 10px #202020;
 }
 
 #header p {
   font-family: Arial;
-  font-size: 25px
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 #sidebar {width: 200px; height: 500px; 	margin: 0; padding: 0; border: 0; float: left; background: #f0e811; margin: 0 0 .5% 0; border-radius: 10px; box-shadow: 5px 5px 10px #202020}
 #content {width: 500px; height: 400px; 	margin: 0; padding: 0; border: 0; float: left; background: #ffffff;}
 #content p {font-family: Arial; font-size: 14px}
-#footer {width: 900px; 	height: 50px; 	margin: 0; padding: 0; border: 0; float: left; background: #7b00ff; clear:both; margin: 0 0 .5% 0;border-radius: 10px; box-shadow: 5px 5px 10px #202020}
+#footer {
+  width: 100vw;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  background: #7b00ff;
+  clear:both;
+  margin: 0 0 .5% 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #202020
+}
